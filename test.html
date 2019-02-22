@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试scroll</title>
+    <style>
+        body{height:100%;overflow: hidden;}
+        .box1{height:1000px;width:100%;background:#ccc;}
+        .box1{height:1000px;width:100%;background:#aaa;}
+    
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <a href="###123">测试</a>
+    </div>
+    <div class="box2"></div>
+    <script>
+        let div = document.querySelector(".box1")
+        div.onclick = function(){
+            console.log(location.hash)
+            
+        }
+        /* window.onscroll = function () {
+            let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+            console.log('滚动条位置：' + scrollTop);
+        } */
+    </script>
+</body>
+</html>

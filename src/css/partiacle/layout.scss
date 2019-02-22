@@ -1,0 +1,15 @@
+html{font-size: 37.5px;}
+html,body,#app-maoyan{height:100%}
+img{width:100%;height:100%;}
+.active{color:#e54847;border-color:#e54847!important;}
+// 头部样式
+#app-maoyan{display:flex;flex-direction:column;justify-content: space-between;}
+#head-wrap,#footer-wrap{flex-grow: 0;flex-shrink: 1;}
+#head-wrap{height:1.333333rem;}
+#head-wrap .header h1{line-height: 1.33333rem;text-align: center;font-size: .48rem;color:#fff;width:100%;background:#e54847;font-weight: 400;}
+
+// 尾部样式
+#footer-wrap{height: 1.28rem;}
+#footer-wrap .footer{display:flex;justify-content: space-around;height:100%;}
+#footer-wrap .footer a{display:flex;height:100%;flex-direction: column; justify-content: center;font-size: .32rem;}
+#footer-wrap .footer a i{text-align: center;font-size: .666667rem;}

@@ -1,0 +1,40 @@
+
+<main class="main">
+    <div class="topbar">
+        <div class="topbar-position">北京</div>
+        <div class="topbar-content">
+            <div class="topbar-content-hot active">正在热映</div>
+            <div class="topbar-content-prev">即将上映</div>
+        </div>
+        <div class="topbar-search iconfont icon-search"></div>
+    </div>
+    <div class="all-film">
+    {{#each film}}
+        <div class="main-movie-box">
+            <div class="movie-item">
+                <div class="movie-img">
+                    <img src='{{img}}' alt="">
+                </div>
+                <div class="movie-infor">
+                    <div class="movie-infor-title">
+                        <h2 class="movie-name">{{nm}}</h2>
+                        <span class=movie-type></span>
+                    </div>
+                    <div class="movie-infor-content">
+                        <div class="movie-score">
+                            <span class="score-audience">观众评</span>
+                            <span class="grade">{{sc}}</span>
+                        </div>
+                        <div class="movie-actor">主演：{{star}}</div>
+                        <div class="movie-show-info">{{showInfo}}</div>
+                    </div>
+                </div>
+                <div class="movie-btn">
+                    <span class="movie-buy">购票</span>
+                </div>
+            </div>
+        </div>
+    
+    {{/each}}
+    </div>
+</main>
